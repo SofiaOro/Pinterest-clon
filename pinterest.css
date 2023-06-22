@@ -1,0 +1,40 @@
+body {
+    background-color: beige;
+}
+.menu {
+    margin: 15px;
+}
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+.main {
+    padding: 10px;
+}
+.first-image {
+    width: 236px;
+    height: 247px;
+    border-radius: 16px;
+}
+
+.second-image {
+    
+} 
+.video-border {
+    border-radius: 16px;
+}
+.finder {
+    border-radius: 16px;
+}
+.btn-home {
+    border-radius: 37px;
+    background-color: black;
+    color: white;
+    width: 74px;
+    height: 44px;
+}
+
+.input-searching {
+    height: 40px;
+    margin-top: 15px;
+}
