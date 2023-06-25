@@ -1,14 +1,23 @@
 body {
     background-color: beige;
 }
+main {
+    margin-top:60px;
+}
 .menu {
-    margin: 15px;
+    display: inline-flex;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: beige;
+    z-index: 999;
 }
 .flex-container {
     display: flex;
     width: 100%;
 }
-.main {
+.card-image {
     padding: 10px;
 }
 .first-image {
@@ -16,10 +25,6 @@ body {
     height: 247px;
     border-radius: 16px;
 }
-
-.second-image {
-    
-} 
 .video-border {
     border-radius: 16px;
 }
@@ -36,5 +41,81 @@ body {
 
 .input-searching {
     height: 40px;
-    margin-top: 15px;
+    margin-top: 2px;
+    width: 1060px;
+    margin-left: 12px;
+}
+.icon {
+    margin: 10px;
+}
+.profile {
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+}
+
+
+.card-image {
+	position: relative;
+}
+.btn-save {
+	position: absolute;
+    z-index: 2;
+    top: 33px;
+    display: none;
+    left: 140px;
+    width: 92px;
+}
+.btn-points {
+    position: absolute;
+    z-index: 2;
+    top: 33px;
+    display: none;
+    left: 19px;
+    width: 92px;
+}
+.btn-save-video {
+    position: absolute;
+    z-index: 2;
+    top: 33px;
+    display: none;
+    left: 220px;
+    width: 92px;
+}
+.transparent {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 92%;
+    height: 92%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    border-radius: 16px;
+}
+.card-image:hover .transparent {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+}
+.card-image:hover .btn-save, .card-image:hover .btn-points, .card-image:hover .btn-save-video { 
+	display:block;
+}
+
+@media screen and (max-width: 390px ) {
+    .flex-container {
+        display: inline;
+    }
+    .first-image  {
+      width: 100%;
+    }
+    .video-border {
+        width: 100%;
+        height: 100%;
+    }
+    .menu {
+        display: inline;
+    }
+    .input-searching {
+        width: 97%;
+        margin-left: 3px;
+    }
 }
