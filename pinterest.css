@@ -86,12 +86,13 @@ main {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 92%;
-    height: 92%;
+    width: 93.3%;
+    height: 90%;
     background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
     border-radius: 16px;
 }
+
 .card-image:hover .transparent {
     display: block;
     background: rgba(0, 0, 0, .3);
@@ -118,4 +119,8 @@ main {
         width: 97%;
         margin-left: 3px;
     }
+}
+.video-mask {
+    object-fit: cover !important;
+    border-radius: 10px !important;
 }
